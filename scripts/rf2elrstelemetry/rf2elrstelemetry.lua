@@ -385,7 +385,7 @@ function rf2elrstelemetry.crossfirePop()
 end
 
 function rf2elrstelemetry.run()
-    while rf2elrstelemetry.crossfirePop() do end
+    while not ELRS_PAUSE_TELEMETRY and rf2elrstelemetry.crossfirePop() do end
 end
 
 return rf2elrstelemetry
